@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/php" href="dp_creation.php">
+  
+  <style>
+    body{
+       background: url("./img/blue-curve-frame-template_53876-114605.avif");
+       background-size: 100% 120%;
+    }
+    .sub{
+        border:transparent;
+        border: none;
+
+    }
+
+  </style>
+ 
+
+<div class="header">
+ <img src="./img/logo1.png" style="height:125px ; width:125px;">
+  <h1> SHREE MAHENDRA RASTRYA BASIC SCHOOL</h1>
+
+     <p> Pokhara-20, Bhalam </p>
+  
+</div>
+
+</head>
+<body>
+    
+    <form action="login.php" method="post">
+        <fieldset>
+            <legend>Log In</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+        <br>
+
+        <fieldset>
+            <!-- <legend>Register New Account</legend> -->
+            Don't have account. Sign up <button type="submit" class="sub" id="s">Sign-up</button>
+        </fieldset>
+
+        
+    
+    <script>
+        document.getElementById('s').addEventListener("click",fun);
+        function fun(){
+            window.location.href="sign_up_form.html"
+        }
+    </script>
+</body>
+</html>
